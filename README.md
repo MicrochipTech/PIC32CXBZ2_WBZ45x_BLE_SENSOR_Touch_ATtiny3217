@@ -155,7 +155,7 @@ The below video shows the working of the slider logic implemented in this applic
 ![Alt Text](docs/ATTINY3217_T10.gif)
 
 #### Note
-This application's folder can be found by navigating to the following path: "WBZ451_TOUCH/ATTINY3217_T10"
+This application's folder can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ATTINY3217_T10"
 
 ## 6. Harmony MCC Configuration<a name="step6">
 
@@ -198,7 +198,7 @@ This application's folder can be found by navigating to the following path: "WBZ
 - Select the file and click add.
 
 #### Note
-The "rgb_led.c" and "rgb_led.h" can be found by navigating to the following path: "WBZ451_TOUCH/WBZ451_ATTINY3217/firmware/src/sensors" and "app.c" and "app.h" can be found by navigating to the following path: "WBZ451_TOUCH/WBZ451_ATTINY3217/firmware/src".
+The "rgb_led.c" and "rgb_led.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/WBZ451_ATTINY3217/firmware/src/sensors" and "app.c" and "app.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/WBZ451_ATTINY3217/firmware/src".
 
 **Step 10** - Clean and build the project.To run the project select "Make and program device" button.
 
@@ -212,7 +212,7 @@ The "rgb_led.c" and "rgb_led.h" can be found by navigating to the following path
 ![](docs/WBZ451_Teraterm.PNG)
 
 #### Note
-This application's folder can be found by navigating to the following path: "WBZ451_TOUCH/ble_sensor_touch/firmware/ble_sensor_touch.X".
+This application's folder can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ble_sensor_touch/firmware/ble_sensor_touch.X".
 
 ## 7. Board Programming<a name="step7">
 
@@ -221,14 +221,14 @@ This application's folder can be found by navigating to the following path: "WBZ
 - Follow the steps in the link to [Program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device) using MPLABX IPE to program the pre-compiled hex image. 
 
 #### Note
-The application hex files can be found by navigating to the following paths: "WBZ451_TOUCH/hex/ble_sensor_touch.X.production.signed.unified.hex" and "WBZ451_TOUCH/hex/ATTINY3217_T10.hex"
+The application hex files can be found by navigating to the following paths: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/hex/ble_sensor_touch.X.production.signed.unified.hex" and "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/hex/ATTINY3217_T10.hex"
 
 ### Build and program the application using MPLAB X IDE
 
 - Follow the steps in the link to [Build and program the application](https://github.com/MicrochipTech/EA71C53A/blob/master/H3/wireless_apps_pic32cxbz2_wbz45/apps/ble/advanced_applications/ble_sensor_app/readme.md#build-and-program-the-application).
 
 #### Note
-The application folders can be found by navigating to the following paths: "WBZ451_TOUCH/ble_sensor_attiny3217_touch/firmware/ble_sensor_touch.X" and "WBZ451_TOUCH/ATTINY3217_T10"
+The application folders can be found by navigating to the following paths: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ble_sensor_attiny3217_touch/firmware/ble_sensor_touch.X" and "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ATTINY3217_T10"
 
 ## 8. Run the demo<a name="step8">
 
