@@ -144,7 +144,7 @@ The mutual capacitance slider in T10 xpro has only 4 sensors.  Because of this, 
 - Baud rate: 38400
 - Com port: EDBG virtual COM port
 
-![](docs/5_Data_Visualizer.PNG)
+![](docs/5_3217_teraterm.PNG)
 
 #### Application Flowchart
 
@@ -232,6 +232,6 @@ The application folders can be found by navigating to the following paths: "PIC3
 
 ## 8. Run the demo<a name="step8">
 
-- After programming the board the expected application behavior as shown in this [Working demo video](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/blob/main/docs/Working_Demo.gif).
+- After programming the board the expected application behavior as shown in the below [video](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/blob/main/docs/Working_Demo.gif).
 
 ![Alt Text](docs/Working_Demo.gif)
