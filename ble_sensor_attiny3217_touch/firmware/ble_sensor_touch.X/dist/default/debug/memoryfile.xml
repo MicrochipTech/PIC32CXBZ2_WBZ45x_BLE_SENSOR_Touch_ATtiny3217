@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/debug/ble_sensor_touch.X.debug.elf">
+    <memory name="program">
+      <units>bytes</units>
+      <length>507392</length>
+      <used>166316</used>
+      <free>341076</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>130048</length>
+      <used>81067</used>
+      <free>48981</free>
+    </memory>
+  </executable>
+</project>

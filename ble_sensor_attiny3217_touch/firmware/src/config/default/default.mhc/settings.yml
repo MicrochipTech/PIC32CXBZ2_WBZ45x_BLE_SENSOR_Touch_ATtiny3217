@@ -1,0 +1,14 @@
+format_version: v1.0
+configName: default
+folderName: ble_sensor
+frameworkPath: C:\D\H3_BZ2
+processor: WBZ451
+projectName: ble_sensor
+settings:
+  PackageFilter: ''
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: dev_packs\Microchip\PIC32CX-BZ_DFP\1.0.107\WBZ451\atdf\WBZ451.atdf
