@@ -1,4 +1,4 @@
-# WBZ45x BLE Sensor with ATTINY3217 Touch Demo
+# ATTINY3217 Touch Demo
 
 <img src="docs/IoT-Made-Easy-Logo.png" width=100>
 
@@ -28,16 +28,16 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 1. [Board Programming](#step5)
 1. [Run the demo](#step6)
 
-## 1. Bill of materials<a name="step2">
+## 1. Bill of materials<a name="step1">
 
 - [ATtiny3217 Xplained Pro](https://www.microchip.com/en-us/development-tool/ATTINY3217-XPRO)
 - [T10 Xplained Pro Extension Kit](https://www.microchip.com/en-us/development-tool/AC47H23A)
 
-## 2. Hardware Setup<a name="step3">
+## 2. Hardware Setup<a name="step2">
 
-- Connect T10 Extension header 3 (EXT3) to ATtiny3217 Xplained Pro kit Extension Header 1 (EXT1).
+- Connect T10 Xplained Pro Extension header 3 (EXT3) to ATtiny3217 Xplained Pro kit Extension Header 1 (EXT1).
 
-## 3. Software Setup<a name="step4">
+## 3. Software Setup<a name="step3">
 
 - [Microchip Studio](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio#Downloads)
 
@@ -45,11 +45,11 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 - [MPLAB X IPE](https://microchipdeveloper.com/ipe:installation)
 
-## 4. Atmel Start Configuration<a name="step5">
+## 4. Atmel Start Configuration<a name="step4">
 
 ### Getting started with touch application in ATTINY3217 XPRO
 
-**Step 1** - Connect the ATtiny3217 and T10 xpro interface to the device/system using a micro-USB cable.
+**Step 1** - Connect the ATtiny3217 Xplained Pro and T10 Xplained Pro interface to the device/system using a micro-USB cable.
 
 **Step 2** - Create a new Atmel start project on Microchip Studio.
 
@@ -62,7 +62,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 - PTC
 - USART
 
-**Step 5** - Select ATtiny 3217 Xplained Pro board and then select create new project.
+**Step 5** - Select ATtiny3217 Xplained Pro board and then select create new project.
 
 ![](docs/1_Atmel_start_selection.PNG)
 
@@ -124,11 +124,11 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 #### Note
 This application's folder can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ATTINY3217_T10"
 
-## 5. Board Programming<a name="step7">
+## 5. Board Programming<a name="step5">
 
 ### Program the precompiled hex file using MPLAB X IPE
 
-- Follow the steps in the link to [Program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device) using MPLABX IPE to program the pre-compiled hex image. 
+- Follow the steps in the link to [program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device) using MPLABX IPE to program the pre-compiled hex image. 
 
 #### Note
 The application hex files can be found by navigating to the following paths: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/hex/ble_sensor_touch.X.production.signed.unified.hex" and "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/hex/ATTINY3217_T10.hex"
@@ -141,7 +141,7 @@ The application hex files can be found by navigating to the following paths: "PI
 #### Note
 The application folders can be found by navigating to the following paths: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ble_sensor_attiny3217_touch/firmware/ble_sensor_touch.X" and "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ATTINY3217_T10"
 
-## 6. Run the demo<a name="step8">
+## 6. Run the demo<a name="step6">
 
 - After programming the board the expected application behavior as shown in the below video.
 
