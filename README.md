@@ -23,11 +23,10 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 1. [Introduction](#step1)
 1. [Bill of materials](#step2)
-1. [Bill of materials](#step2)
 1. [Hardware Setup](#step3)
 1. [Software Setup](#step4)
 1. [Harmony MCC Configuration](#step5)
-1. [Atmel Start Configuration](#step6)
+1. [ATtiny3217 Touch Application Code](#step6)
 1. [Board Programming](#step7)
 1. [Run the demo](#step8)
 
@@ -99,29 +98,57 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 ### Getting started with touch application in WBZ451 Curiosity board Curiosity board
 
-**Step 1** - Connect the WBZ451 Curiosity board and touch interface to the device/system using a micro-USB cable.
+**Step 1** - Connect the WBZ451 CURIOSITY BOARD and touch interface to the device/system using a micro-USB cable.
 
 **Step 2** - Create a new MCC harmony project in MPLAB X IDE.
 
-**Step 3** - Follow the steps provided in the [BLE Sensor application Configurations](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#using-mplab-code-configurator-guid-92ae4cba-30c5-4596-9359-1ac3c5065686-section) to create the project graph.
+**Step 3** - In MCC harmony project graph select the below mentioned devices from device resources.
 
-**Step 4** - In addition, add and configure SERCOM2 as shown below.
+- SERCOM0
+- SERCOM2
+- TC2
+- TC3
+- System Console
+- Transparent service BLE stack
 
-![](docs/10_SERCOM2_configuration.PNG)
-
-**Step 5** - Connect SERCOM2 as second instance to the SYSTEM CONSOLE as shown.
+**Step 4** - Make the connections as shown below
 
 ![](docs/6_Project_Graph.PNG)
 
-**Step 6** - In project graph, go to Plugins->Pin configurations->Pin settings and set the pin configuration as shown below.
+**Step 5** - Configure the timers TC2 and TC3 as shown below
+
+![](docs/7_TC2_configuration.PNG)
+
+![](docs/8_TC3_configuration.PNG)
+
+**Step 6** - Configure SERCOM0 and SERCOM2 as shown below
+
+![](docs/9_SERCOM0_configuration.PNG)
+
+![](docs/10_SERCOM2_configuration.PNG)
+
+**Step 7** - Make the system configurations as shown below.
+
+![](docs/11_System_configuration.PNG)
+
+**Step 8** - Configue BLE stack for advertising as shown below.
+
+![](docs/12_BLE_configuration.PNG)
+
+![](docs/13_BLE_configuration.PNG)
+
+**Step 9** - In project graph, go to Plugins->Pin configurations->Pin settings and set the pin configuration as shown below.
 
 ![](docs/14_Pin_configuration.PNG)
 
-**Step 7** - Click the "Generate" button.
+**Step 10** - Click the "Generate" button.
 
-**Step 8** - In "app_user_edits.c", make sure this line is commented "#error User action required - manually edit files as described here".
+**Step 11** - In "app_user_edits.c", make sure this line is commented "#error User action required - manually edit files as described here".
 
-**Step 9** - Remove the generated "app.c" and "app.h" file. Add the "app.c" and "rgb_led.c" files given in the folder under source files and "app.h" and "rgb_led.h" files given in the folder under header files in your project by following the steps mentioned below.
+**Step 12** - Remove the generated "app.c" and "app.h" file. Add the "app.c" and "rgb_led.c" files given in the folder under source files and "app.h" and "rgb_led.h" files given in the folder under header files in your project by following the steps mentioned below.
+
+- The "rgb_led.c" and "rgb_led.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src/sensors".
+- The "app.c" and "app.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src".
 
 #### To remove files
 
@@ -135,26 +162,24 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 - Select Add Existing item.
 - Select the file and click add.
 
-#### Note
-- The "rgb_led.c" and "rgb_led.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src/sensors".
-- The "app.c" and "app.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src".
+**Step 13** - Clean and build the project. To run the project, select "Make and program device" button.
 
-**Step 10** - Clean and build the project. To run the project, select "Make and program device" button.
+**Step 14** - To the test the application in MBD application follow the steps in the [BLE Sensor App](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#expected-out-of-box-behavior-guid-55c9fa3e-cc06-46c9-8a62-327fff7b44ab-section).
 
-**Step 11** - To the test the application in MBD application follow the steps in the [BLE Sensor App](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#expected-out-of-box-behavior-guid-55c9fa3e-cc06-46c9-8a62-327fff7b44ab-section).
-
-**Step 12** - The received data is printed onto the tera term as shown below.
+**Step 15** - The received data is printed onto the tera term as shown below.
 
 - Baud rate: 115200
 - Com port: COM USB serial port
 
-![](docs/WBZ451 Curiosity board_Teraterm.PNG)
+![](docs/WBZ451_Teraterm.PNG)
 
 #### Note
 This application's folder can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/ble_sensor_touch/firmware/ble_sensor_touch.X".
 
-## 6. Atmel Start Configuration<a name="step6">
 
+## 6. ATtiny3217 Touch Application <a name="step6">
+
+- The application folder can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/ATtiny3217 Xplained Pro_T10"
 - Follow the steps provided to [program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device) to program the ATtiny3217 Xplained Pro.
 - To create the Atmel Start project from scratch follow steps in this [link](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/tree/main/ATTiny3217_T10#wbz45x-ble-sensor-with-attiny3217-touch-demo)
 
@@ -162,21 +187,19 @@ This application's folder can be found by navigating to the following path: "PIC
 
 ### Program the precompiled hex file using MPLAB X IPE
 
-- Follow the steps in the link to [program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device) using MPLABX IPE to program the pre-compiled hex image. 
-
-#### Note
 The application hex files can be found by navigating to the following paths: 
 - "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/hex/ble_sensor_touch.X.production.signed.unified.hex"
 - "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/hex/ATtiny3217 Xplained Pro_T10.hex"
 
+Follow the steps in the link to [program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device) using MPLABX IPE to program the pre-compiled hex image. 
+
 ### Build and program the application using MPLAB X IDE
 
-- Follow the steps in the link to [Build and program the application](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#build-and-program-the-application-guid-3d55fb8a-5995-439d-bcd6-deae7e8e78ad-section).
-
-#### Note
 The application folders can be found by navigating to the following paths: 
 - "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/ble_sensor_ATtiny3217 Xplained Pro_touch/firmware/ble_sensor_touch.X"
 - "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/ATtiny3217 Xplained Pro_T10"
+
+Follow the steps in the link to [Build and program the application](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#build-and-program-the-application-guid-3d55fb8a-5995-439d-bcd6-deae7e8e78ad-section).
 
 ## 8. Run the demo<a name="step8">
 

@@ -92,11 +92,11 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 **Step 10** - Add the "led_driver.c" and "led_driver.h" files to your project by following the steps mentioned below. 
 
+- The files can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217\ATTiny3217_T10\ATTiny3217_T10"
 - Copy the files to the project folder.
 - Right click on the project in Solution explorer.
 - Select Add->Existing item.
 - Select the file and click add.
-- The files can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217\ATTiny3217_T10\ATTiny3217_T10"
 
 **Step 11** - Replace the "main.c" and "atmel_start.h" files.
 
@@ -125,18 +125,14 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ### Program the precompiled hex file using MPLAB X IPE
 
+- The application hex files can be found by navigating to the following paths:"PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/hex/ATTINY3217_T10.hex"
 - Follow the steps in the link to [program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device) using MPLABX IPE to program the pre-compiled hex image. 
-
-#### Note
-The application hex files can be found by navigating to the following paths: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/hex/ble_sensor_touch.X.production.signed.unified.hex" and "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/hex/ATTINY3217_T10.hex"
 
 ### Build and program the application using Microchip Studio
 
+- The application folder can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ATTINY3217_T10"
 - Build the solution by clicking the "Build Solution" button.
 - Run the solution by clicking the "Start without debugging" button.
-
-#### Note
-The application folder can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ATTINY3217_T10"
 
 ## 6. Run the demo<a name="step6">
 
