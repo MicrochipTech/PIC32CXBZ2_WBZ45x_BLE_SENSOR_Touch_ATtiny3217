@@ -23,6 +23,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 1. [Introduction](#step1)
 1. [Bill of materials](#step2)
+1. [Bill of materials](#step2)
 1. [Hardware Setup](#step3)
 1. [Software Setup](#step4)
 1. [Harmony MCC Configuration](#step5)
@@ -32,20 +33,20 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This application demonstrates the use of an external touch interface(ATtiny3217 Xplained Pro+T10 Xplained Pro kit) through UART protocol to control the RGB led of WBZ451 Curiosity board. The led can also be controlled by Microchip Bluetooth Data(MBD) app through Bluetooth Low Energy(BLE). The WBZ451 Curiosity board will report the led status to mobile phone and touch interface through BLE and UART respectively. The temperature data is also reported periodically to the mobile phone through BLE.
+This application demonstrates the use of an external touch interface (ATtiny3217 Xplained Pro and T10 Xplained Pro kit) through UART protocol to control the RGB LED of WBZ451 Curiosity board. The LED can also be controlled by Microchip Bluetooth Data (MBD) application through Bluetooth Low Energy (BLE). The WBZ451 Curiosity board will report the LED status to mobile phone and touch interface through BLE and UART respectively. The temperature data is also periodically reported to the mobile phone through BLE.
 
 ![](docs/0_Hardware_Setup.PNG)
 
-The T10 Xplained Pro kit has four mutual capacitance buttons and a mutual capacitance slider. This kit is supported by the ATtiny3217 Xplained Pro as it has a capacitive touch enabled MCU and a matching pinout that connects the external headers. The four mutual capacitance buttons are configured for Red, Green, Blue and ON_OFF button. The intensity of each Red, Green and Blue button is controlled by the slider respectively. 
+The T10 Xplained Pro kit has four mutual capacitance buttons and one mutual capacitance slider. This kit is supported by the ATtiny3217 Xplained Pro as it has a capacitive touch enabled MCU and a matching pinout that connects the external headers. The four mutual capacitance buttons are configured for Red, Green, Blue and ON_OFF button. The intensity of each Red, Green and Blue button is controlled by the slider respectively. 
 
-The range of one slide is from minimum intensity to medium intensity and the second slide is from medium intensity to maximum intensity and the vice versa to reduce the intensity. To set the maximum intensity of a color we need to complete two full swipes in the slider. This touch data is transmitted to WBZ451 Curiosity board through UART protocol in the form of a 32 bit data frame as shown below. 
+To set maximum intensity of a color in the LED we need to complete two full swipes in the slider. The range of one slide is from minimum intensity to medium intensity and the second slide is from medium intensity to maximum intensity and the vice versa to reduce the intensity. This touch data is transmitted to WBZ451 Curiosity board through UART protocol in the form of a 32-bit data frame as shown below. 
 
 ![](docs/0_Data_frame.PNG)
 
-This data frame is received by the WBZ451 Curiosity board and is used to control the RGB led. Whenever the RGB button is pressed the led switches on and when the ON_OFF button is pressed again the led switches off. These changes are also reflected in the MBD app.
+The WBZ451 curiosity board receives this data frame and uses this to control the RGB LED. Whenever the RGB button is pressed the LED switches on and when the ON_OFF button is pressed the LED switches off. These changes are also reflected in the MBD application.
 
 #### Note
-The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of this, the slider can only set four intensity values on a single slide. To increase the RGB led's resolution, we are using two slide logic in the application.
+The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of this, the slider can only set four intensity values on a single slide. To increase the RGB LED's resolution, we are using two slide logic in the application.
 
 ## 2. Bill of materials<a name="step2">
 
@@ -70,8 +71,8 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 - [Microchip Studio](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio#Downloads)
 
 	- Version: 7.0.2594
-	- XC8Toolchain Provider(1.0.140)
-	- Atmel kits(7.0.132)
+	- XC8Toolchain Provider (1.0.140)
+	- Atmel kits (7.0.132)
 	
 - [MPLAB X IDE ](https://www.microchip.com/en-us/tools-resources/develop/mplab-x-ide#tabs)
 
@@ -102,7 +103,7 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 **Step 2** - Create a new MCC harmony project in MPLAB X IDE.
 
-**Step 3** - Follow the steps provided in the [BLE Sensor App Configurations](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#using-mplab-code-configurator-guid-92ae4cba-30c5-4596-9359-1ac3c5065686-section) to create the project graph.
+**Step 3** - Follow the steps provided in the [BLE Sensor application Configurations](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#using-mplab-code-configurator-guid-92ae4cba-30c5-4596-9359-1ac3c5065686-section) to create the project graph.
 
 **Step 4** - In addition, add and configure SERCOM2 as shown below.
 
@@ -138,9 +139,9 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 - The "rgb_led.c" and "rgb_led.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src/sensors".
 - The "app.c" and "app.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src".
 
-**Step 10** - Clean and build the project. To run the project select "Make and program device" button.
+**Step 10** - Clean and build the project. To run the project, select "Make and program device" button.
 
-**Step 11** - To the test the application in MBD app follow the steps in the [BLE Sensor App](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#expected-out-of-box-behavior-guid-55c9fa3e-cc06-46c9-8a62-327fff7b44ab-section).
+**Step 11** - To the test the application in MBD application follow the steps in the [BLE Sensor App](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#expected-out-of-box-behavior-guid-55c9fa3e-cc06-46c9-8a62-327fff7b44ab-section).
 
 **Step 12** - The received data is printed onto the tera term as shown below.
 
@@ -179,6 +180,6 @@ The application folders can be found by navigating to the following paths:
 
 ## 8. Run the demo<a name="step8">
 
-- After programming the board the expected application behavior as shown in the below [video](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/blob/main/docs/Working_Demo.gif).
+- After programming the board, the expected application behavior is shown in the below [video](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/blob/main/docs/Working_Demo.gif).
 
 ![Alt Text](docs/Working_Demo.gif)
