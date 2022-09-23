@@ -32,7 +32,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This application demonstrates the use of an external touch interface(ATtiny3217 Xplained Pro+T10 Xplained Pro kit) through UART protocol to control the RGB led of WBZ451 Curiosity board. The led can also be controlled by Microchip Bluetooth Data(MBD) app through Bluetooth Low Energy(BLE). The WBZ451 Curiosity board will report the temperature data and the led status to mobile phone through BLE.
+This application demonstrates the use of an external touch interface(ATtiny3217 Xplained Pro+T10 Xplained Pro kit) through UART protocol to control the RGB led of WBZ451 Curiosity board. The led can also be controlled by Microchip Bluetooth Data(MBD) app through Bluetooth Low Energy(BLE). The WBZ451 Curiosity board will report the led status to mobile phone and touch interface through BLE and UART respectively. The temperature data is also reported periodically to the mobile phone through BLE.
 
 ![](docs/0_Hardware_Setup.PNG)
 
