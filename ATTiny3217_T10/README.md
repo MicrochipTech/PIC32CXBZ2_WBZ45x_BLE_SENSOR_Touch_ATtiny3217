@@ -55,7 +55,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 **Step 3** - From the middleware section add QTouch Library.
 
-**Step 4** - From the drivers section add the following peripheral modules
+**Step 4** - From the drivers section add the following peripheral modules by changing the value from 0 to 1.
 
 - I2C
 - Timer
