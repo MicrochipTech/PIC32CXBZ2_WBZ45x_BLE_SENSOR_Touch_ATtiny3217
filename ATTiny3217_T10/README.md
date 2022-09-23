@@ -3,9 +3,9 @@
 <img src="docs/IoT-Made-Easy-Logo.png" width=100>
 
 
-> "Wireless Made Easy!" - This example applications add Wi-Fi connectivity to a BLE+15.4 capable device
+> "Wireless Made Easy!"
 
-Devices: **| ATTINY3217 | T10 |**<br>
+Devices: **| ATTINY3217 Xplained Pro | T10 Xplained Pro |**<br>
 Features: **| TOUCH |**
 
 
@@ -82,7 +82,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 - In Pin section, enable table view.
 
-![](docs/Table_view.PNG)
+![](docs/Table_view.png)
 
 - Select the pin configuration as shown below.
 
@@ -106,7 +106,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 - #define DEF_TOUCH_DATA_STREAMER_ENABLE 0u
 
-**Step 13** - Rebuild the application and run the application. The logic implemented in ATtiny3217 is shown in the video below.
+**Step 13** - Rebuild and run the application. The logic implemented in ATtiny3217 is shown in the video below.
 
 ![Alt Text](docs/Touch_logic_animation.gif)
 
@@ -120,9 +120,6 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 #### Application Flowchart
 
 ![](docs/Application_flowchart.png)
-
-#### Note
-This application's folder can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ATTINY3217_T10"
 
 ## 5. Board Programming<a name="step5">
 
@@ -139,10 +136,10 @@ The application hex files can be found by navigating to the following paths: "PI
 - Run the solution by clicking the "Start without debugging" button.
 
 #### Note
-The application folders can be found by navigating to the following paths: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ble_sensor_attiny3217_touch/firmware/ble_sensor_touch.X" and "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ATTINY3217_T10"
+The application folder can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/ATTINY3217_T10"
 
 ## 6. Run the demo<a name="step6">
 
-- After programming the board the expected application behavior as shown in the below video.
+- After programming the board the expected application behavior is shown in the below [video](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/blob/main/ATTiny3217_T10/docs/ATTINY3217_T10.gif).
 
 ![Alt Text](docs/ATTINY3217_T10.gif)
