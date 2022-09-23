@@ -164,7 +164,7 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 **Step 13** - Clean and build the project. To run the project, select "Make and program device" button.
 
-**Step 14** - To the test the application in MBD application follow the steps in the [BLE Sensor App](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#expected-out-of-box-behavior-guid-55c9fa3e-cc06-46c9-8a62-327fff7b44ab-section).
+**Step 14** - To the test the application in MBD app follow the steps provided in the [BLE Sensor App](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#expected-out-of-box-behavior-guid-55c9fa3e-cc06-46c9-8a62-327fff7b44ab-section).
 
 **Step 15** - The received data is printed onto the tera term as shown below.
 
@@ -179,9 +179,8 @@ This application's folder can be found by navigating to the following path: "PIC
 
 ## 6. ATtiny3217 Touch Application <a name="step6">
 
-- The application folder can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/ATtiny3217 Xplained Pro_T10"
-- Follow the steps provided to [program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device) to program the ATtiny3217 Xplained Pro.
-- To create the Atmel Start project from scratch follow steps in this [link](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/tree/main/ATTiny3217_T10#wbz45x-ble-sensor-with-attiny3217-touch-demo)
+- Follow the steps provided under [program the precompiled hex file](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217#7-board-programming) section to program the ATtiny3217 Xplained Pro and T10 Xplained Pro interface.
+- To create the Atmel Start project from scratch follow steps provided in this [link](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217/tree/main/ATTiny3217_T10#wbz45x-ble-sensor-with-attiny3217-touch-demo).
 
 ## 7. Board Programming<a name="step7">
 
@@ -191,7 +190,7 @@ The application hex files can be found by navigating to the following paths:
 - "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/hex/ble_sensor_touch.X.production.signed.unified.hex"
 - "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/hex/ATtiny3217 Xplained Pro_T10.hex"
 
-Follow the steps in the link to [program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device) using MPLABX IPE to program the pre-compiled hex image. 
+Follow the steps provided in the link to [program the precompiled hex file](https://microchipdeveloper.com/ipe:programming-device) using MPLABX IPE to program the pre-compiled hex image. 
 
 ### Build and program the application using MPLAB X IDE
 
@@ -199,7 +198,7 @@ The application folders can be found by navigating to the following paths:
 - "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/ble_sensor_ATtiny3217 Xplained Pro_touch/firmware/ble_sensor_touch.X"
 - "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/ATtiny3217 Xplained Pro_T10"
 
-Follow the steps in the link to [Build and program the application](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#build-and-program-the-application-guid-3d55fb8a-5995-439d-bcd6-deae7e8e78ad-section).
+Follow the steps provided in the link to [Build and program the application](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#build-and-program-the-application-guid-3d55fb8a-5995-439d-bcd6-deae7e8e78ad-section).
 
 ## 8. Run the demo<a name="step8">
 
