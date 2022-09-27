@@ -142,34 +142,24 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 - "#error User action required - manually edit files as described here".
 
-**Step 11** - Remove the generated "app.c","app.h","app_ble.c","app_ble.h","app_ble_sensor.c","app_ble_sensor.h","app_ble_handler.c" and "app_ble_handler.h" files. 
+| Note | This repository should be cloned/downloaded to perform the following steps. |
+| :- | :- |
 
-- The "rgb_led.c" and "rgb_led.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src/sensors".
+**Step 11** - Copy the mentioned files from this repository by navigating to the location mentiond below and replace the generated "app.c","app.h","app_ble.c","app_ble.h","app_ble_sensor.c","app_ble_sensor.h","app_ble_handler.c" and "app_ble_handler.h" files. 
+
+| Note | This application repository should be cloned/downloaded to perform the following steps. |
+| :- | :- |
+
 - The "app.c","app_ble_sensor.c","app_ble_sensor.h" and "app.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src".
+- Replace the "app.c","app_ble_sensor.c","app.h" and "app_ble_sensor.h" files in your project folder location(\wireless_apps_pic32cxbz2_wbz45\apps\ble\advanced_applications\ble_sensor\firmware\src).
 - The "app_ble.c","app_ble.h","app_ble_handler.c" and "app_ble_handler.h" files can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src/app_ble".
+- Replace the "app_ble.c","app_ble.h","app_ble_handler.c" and "app_ble_handler.h" files in your project folder location(\wireless_apps_pic32cxbz2_wbz45\apps\ble\advanced_applications\ble_sensor\firmware\src\app_ble).
 
-#### To remove files
+**Step 12** - Clean and build the project. To run the project, select "Make and program device" button.
 
-- Right click on the file in projects
-- Select "Remove from project".
+**Step 13** - To the test the application in MBD app follow the steps provided in the [BLE Sensor App](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#expected-out-of-box-behavior-guid-55c9fa3e-cc06-46c9-8a62-327fff7b44ab-section).
 
-**Step 12** - Add the files under respective folders as given below.
-
-- Add the "app.c","app_ble_sensor.c" and "rgb_led.c" files given in the folder under source files and "app.h","app_ble_sensor.h" and "rgb_led.h" files given in the folder under header files in your project by following the steps mentioned below.
-- Add the "app_ble.c" and "app_ble_handler.c" files given in the folder under source files->app_ble folder and "app_ble.h" and "app_ble_handler.h" files given in the folder under header files->app_ble folder in your project by following the steps mentioned below.
-
-#### To add files
-
-- Copy the files to the folder from which they were removed.
-- In MPLAB, right click on the file under which you would want to add the file to your project.
-- Select Add Existing item.
-- Select the file and click add.
-
-**Step 13** - Clean and build the project. To run the project, select "Make and program device" button.
-
-**Step 14** - To the test the application in MBD app follow the steps provided in the [BLE Sensor App](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#expected-out-of-box-behavior-guid-55c9fa3e-cc06-46c9-8a62-327fff7b44ab-section).
-
-**Step 15** - The received data is printed onto the tera term as shown below.
+**Step 14** - The received data is printed onto the tera term as shown below.
 
 - Baud rate: 115200
 - Com port: COM USB serial port
