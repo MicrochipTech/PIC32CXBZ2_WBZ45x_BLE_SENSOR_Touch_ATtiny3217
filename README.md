@@ -98,6 +98,9 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 ### Getting started with touch application in WBZ451 Curiosity board Curiosity board
 
+#### Tip
+New users of MPLAB Code Configurator are recommended to go through the [overview](https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-AFAB9227-B10C-4FAE-9785-98474664B50A).
+
 **Step 1** - Connect the WBZ451 CURIOSITY BOARD and touch interface to the device/system using a micro-USB cable.
 
 **Step 2** - This application is built by using [BLE Sensor Application](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor) as the building block. The project graph of the BLE Sensor application is shown below.
@@ -126,7 +129,7 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 ![](docs/6_Project_Graph.PNG)
 
-**Step 9** - Click the "Generate" button.
+**Step 9** - [Generate the code](https://onlinedocs.microchip.com/pr/GUID-A5330D3A-9F51-4A26-B71D-8503A493DF9C-en-US-1/index.html?GUID-9C28F407-4879-4174-9963-2CF34161398E).
 
 **Step 10** - In "app_user_edits.c", make sure the below code line is commented 
 
