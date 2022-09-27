@@ -87,6 +87,9 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 	  - dev_packs: v3.13.0
 	  - wolfssl version: v4.7.0
 	  - crypto version: v3.7.6
+	  - wireless_pic32cxbz_wbz: v1.0.0
+	  - wireless_ble: v1.0.0
+	  - wireless_system_pic32cxbz_wbz: v1.0.0
 
 - Any Serial Terminal application like [TERA TERM](https://download.cnet.com/Tera-Term/3000-2094_4-75766675.html) terminal application
 
