@@ -100,64 +100,57 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 **Step 1** - Connect the WBZ451 CURIOSITY BOARD and touch interface to the device/system using a micro-USB cable.
 
-**Step 2** - Create a new MCC harmony project in MPLAB X IDE.
+**Step 2** - This application is built by using [BLE Sensor Application](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor) as the building block. The project graph of the BLE Sensor application is shown below.
 
-**Step 3** - In MCC harmony project graph select the below mentioned devices from device resources.
+![](docs/Ble_sensor_project_graph.PNG)
 
-- SERCOM0
-- SERCOM2
-- TC2
-- TC3
-- System Console
-- Transparent service BLE stack
-
-**Step 4** - Make the connections as shown below
-
-![](docs/6_Project_Graph.PNG)
-
-**Step 5** - Configure the timers TC2 and TC3 as shown below
-
-![](docs/7_TC2_configuration.PNG)
-
-![](docs/8_TC3_configuration.PNG)
-
-**Step 6** - Configure SERCOM0 and SERCOM2 as shown below
-
-![](docs/9_SERCOM0_configuration.PNG)
+**Step 4** - In MCC harmony project graph select the SERCOM2 from device resources->peripherals and configure as shown below.
 
 ![](docs/10_SERCOM2_configuration.PNG)
 
-**Step 7** - Make the system configurations as shown below.
+**Step 5** - In MCC harmony project graph, select System Console and configure as mentioned below.
+
+- Add another instance by clicking the "+" button in System Console device and connect SERCOM2 to Instance 1.
+
+![](docs/System_console.PNG)
+
+**Step 6** - Make the system configurations as shown below.
 
 ![](docs/11_System_configuration.PNG)
 
-**Step 8** - Configue BLE stack for advertising as shown below.
-
-![](docs/12_BLE_configuration.PNG)
-
-![](docs/13_BLE_configuration.PNG)
-
-**Step 9** - In project graph, go to Plugins->Pin configurations->Pin settings and set the pin configuration as shown below.
+**Step 7** - In project graph, go to Plugins->Pin configurations->Pin settings and set the pin configuration as shown below.
 
 ![](docs/14_Pin_configuration.PNG)
 
-**Step 10** - Click the "Generate" button.
+**Step 8** - The project graph after making the configurations is shown below.
 
-**Step 11** - In "app_user_edits.c", make sure this line is commented "#error User action required - manually edit files as described here".
+![](docs/6_Project_Graph.PNG)
 
-**Step 12** - Remove the generated "app.c" and "app.h" file. Add the "app.c" and "rgb_led.c" files given in the folder under source files and "app.h" and "rgb_led.h" files given in the folder under header files in your project by following the steps mentioned below.
+**Step 9** - Click the "Generate" button.
+
+**Step 10** - In "app_user_edits.c", make sure the below code line is commented 
+
+- "#error User action required - manually edit files as described here".
+
+**Step 11** - Remove the generated "app.c","app.h","app_ble.c","app_ble.h","app_ble_sensor.c","app_ble_sensor.h","app_ble_handler.c" and "app_ble_handler.h" files. 
 
 - The "rgb_led.c" and "rgb_led.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src/sensors".
-- The "app.c" and "app.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src".
+- The "app.c","app_ble_sensor.c","app_ble_sensor.h" and "app.h" can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src".
+- The "app_ble.c","app_ble.h","app_ble_handler.c" and "app_ble_handler.h" files can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src/app_ble".
 
 #### To remove files
 
 - Right click on the file in projects
 - Select "Remove from project".
 
+**Step 12** - Add the files under respective folders as given below.
+
+- Add the "app.c","app_ble_sensor.c" and "rgb_led.c" files given in the folder under source files and "app.h","app_ble_sensor.h" and "rgb_led.h" files given in the folder under header files in your project by following the steps mentioned below.
+- Add the "app_ble.c" and "app_ble_handler.c" files given in the folder under source files->app_ble folder and "app_ble.h" and "app_ble_handler.h" files given in the folder under header files->app_ble folder in your project by following the steps mentioned below.
+
 #### To add files
 
-- Copy the files to the "src" folder.
+- Copy the files to the folder from which they were removed.
 - In MPLAB, right click on the file under which you would want to add the file to your project.
 - Select Add Existing item.
 - Select the file and click add.
