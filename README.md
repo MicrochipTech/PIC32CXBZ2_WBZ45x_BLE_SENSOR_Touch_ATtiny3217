@@ -32,7 +32,7 @@ Checkout the <a href="https://microchipsupport.force.com/s/" target="_blank">Tec
 
 ## 1. Introduction<a name="step1">
 
-This application demonstrates the use of an external touch interface (ATtiny3217 Xplained Pro and T10 Xplained Pro kit) through UART protocol to control the RGB LED of WBZ451 Curiosity board. The LED can also be controlled by Microchip Bluetooth Data (MBD) application through Bluetooth Low Energy (BLE). The WBZ451 Curiosity board will report the LED status to mobile phone and touch interface through BLE and UART respectively. The temperature data is also periodically reported to the mobile phone through BLE.
+This application demonstrates the use of an external touch interface (ATtiny3217 Xplained Pro and T10 Xplained Pro kit) through UART protocol to control the RGB LED of WBZ451 Curiosity board. The LED can also be controlled by Microchip Bluetooth Data (MBD) application through Bluetooth Low Energy (BLE) using [BLE Sensor application](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor). The WBZ451 Curiosity board will report the LED status to mobile phone and touch interface through BLE and UART respectively. The temperature data is also periodically reported to the mobile phone through BLE.
 
 ![](docs/0_Hardware_Setup.PNG)
 
@@ -92,7 +92,7 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 - [Microchip Bluetooth Data (MBD) iOS/Android app](https://play.google.com/store/apps/details?id=com.microchip.bluetooth.data&hl=en_IN&gl=US)
 
-- [MPLAB X IPE](https://microchipdeveloper.com/ipe:installation)
+- [MPLAB X IPE v6.00](https://microchipdeveloper.com/ipe:installation)
 
 ## 5. Harmony MCC Configuration<a name="step5">
 
