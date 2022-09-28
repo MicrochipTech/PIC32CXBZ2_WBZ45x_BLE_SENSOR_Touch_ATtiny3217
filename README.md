@@ -130,7 +130,7 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 **Step 7** - In project graph, go to Plugins->Pin configurations->Pin settings and set the pin configuration as shown below.
 
-![](docs/14_Pin_configuration.PNG)
+![](docs/14_Pin_configurations.PNG)
 
 **Step 8** - The project graph after making the configurations is shown below.
 
