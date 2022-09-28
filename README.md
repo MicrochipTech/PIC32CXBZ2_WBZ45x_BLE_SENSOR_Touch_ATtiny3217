@@ -148,10 +148,12 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 | Note | This application repository should be cloned/downloaded to perform the following steps. |
 | :- | :- |
 
-- Copy the "app.c","app_ble_sensor.c","app_ble_sensor.h" and "app.h" files, which can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src".
+- Copy the "app.c","app_ble_sensor.c","app_ble_sensor.h" and "app.h" files, which can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217\ble_sensor_attiny3217_touch\firmware\src".
 - Replace the "app.c","app_ble_sensor.c","app.h" and "app_ble_sensor.h" files in your project folder location(...\wireless_apps_pic32cxbz2_wbz45\apps\ble\advanced_applications\ble_sensor\firmware\src).
-- Copy the "app_ble.c","app_ble.h","app_ble_handler.c" and "app_ble_handler.h" files, which can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/WBZ451 Curiosity board_ATtiny3217 Xplained Pro/firmware/src/app_ble".
+- Copy the "app_ble.c","app_ble.h","app_ble_handler.c" and "app_ble_handler.h" files, which can be found by navigating to the following path: "PPIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217\ble_sensor_attiny3217_touch\firmware\src\app_ble".
 - Replace the "app_ble.c","app_ble.h","app_ble_handler.c" and "app_ble_handler.h" files in your project folder location(...\wireless_apps_pic32cxbz2_wbz45\apps\ble\advanced_applications\ble_sensor\firmware\src\app_ble).
+- Copy the "Sensors" folder which can be found by navigating tot the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217\ble_sensor_attiny3217_touch\firmware\src".
+- Replace the "Sensors" folder in your project folder location(...\wireless_apps_pic32cxbz2_wbz45\apps\ble\advanced_applications\ble_sensor\firmware\src).
 
 **Step 12** - Clean and build the project. To run the project, select "Make and program device" button.
 
