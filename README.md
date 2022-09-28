@@ -166,10 +166,6 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 ![](docs/WBZ451_Teraterm.PNG)
 
-#### Note
-This application's folder can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217 Xplained Pro/ble_sensor_touch/firmware/ble_sensor_touch.X".
-
-
 ## 6. ATtiny3217 Touch Application <a name="step6">
 
 - Follow the steps provided under [program the precompiled hex file](https://github.com/MicrochipTech/PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217#7-board-programming) section to program the ATtiny3217 Xplained Pro and T10 Xplained Pro interface.
