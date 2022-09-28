@@ -150,7 +150,7 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 - Copy the "app.c","app_ble_sensor.c","app_ble_sensor.h" and "app.h" files, which can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217\ble_sensor_attiny3217_touch\firmware\src".
 - Replace the "app.c","app_ble_sensor.c","app.h" and "app_ble_sensor.h" files in your project folder location(...\wireless_apps_pic32cxbz2_wbz45\apps\ble\advanced_applications\ble_sensor\firmware\src).
-- Copy the "app_ble.c","app_ble.h","app_ble_handler.c" and "app_ble_handler.h" files, which can be found by navigating to the following path: "PPIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217\ble_sensor_attiny3217_touch\firmware\src\app_ble".
+- Copy the "app_ble.c","app_ble.h","app_ble_handler.c" and "app_ble_handler.h" files, which can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217\ble_sensor_attiny3217_touch\firmware\src\app_ble".
 - Replace the "app_ble.c","app_ble.h","app_ble_handler.c" and "app_ble_handler.h" files in your project folder location(...\wireless_apps_pic32cxbz2_wbz45\apps\ble\advanced_applications\ble_sensor\firmware\src\app_ble).
 - Copy the "Sensors" folder which can be found by navigating to the following path: "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217\ble_sensor_attiny3217_touch\firmware\src".
 - Replace the "Sensors" folder in your project folder location(...\wireless_apps_pic32cxbz2_wbz45\apps\ble\advanced_applications\ble_sensor\firmware\src).
@@ -159,7 +159,7 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 **Step 13** - To the test the application in MBD app follow the steps provided in the [BLE Sensor App](https://github.com/Microchip-MPLAB-Harmony/wireless_apps_pic32cxbz2_wbz45/tree/master/apps/ble/advanced_applications/ble_sensor#expected-out-of-box-behavior-guid-55c9fa3e-cc06-46c9-8a62-327fff7b44ab-section).
 
-**Step 14** - The received data is printed onto the tera term as shown below.
+**Step 14** - The data printed onto the tera term is shown below.
 
 - Baud rate: 115200
 - Com port: COM USB serial port
