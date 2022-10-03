@@ -3,7 +3,7 @@
 <img src="docs/IoT-Made-Easy-Logo.png" width=100>
 
 
-> "Wireless Made Easy!"
+> "IoT Made Easy!"
 
 Devices: **| ATTINY3217 Xplained Pro | T10 Xplained Pro |**<br>
 Features: **| TOUCH |**

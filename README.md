@@ -3,7 +3,7 @@
 <img src="docs/IoT-Made-Easy-Logo.png" width=100>
 
 
-> "Wireless Made Easy!" 
+> "IoT Made Easy!" 
 
 Devices: **| PIC32CXBZ2 | WBZ45x | ATtiny3217 Xplained Pro |**<br>
 Features: **| BLE | TOUCH |**
