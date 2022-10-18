@@ -99,7 +99,7 @@ The mutual capacitance slider in T10 Xplained Pro kit has 4 sensors.  Because of
 
 ## 5. Harmony MCC Configuration<a name="step5">
 
-### Getting started with touch application in WBZ451 Curiosity board Curiosity board
+### Getting started with touch application in WBZ451 Curiosity board 
 
 | Tip | New users of MPLAB Code Configurator are recommended to go through the [overview](https://onlinedocs.microchip.com/pr/GUID-1F7007B8-9A46-4D03-AEED-650357BA760D-en-US-6/index.html?GUID-AFAB9227-B10C-4FAE-9785-98474664B50A) |
 | :- | :- |
