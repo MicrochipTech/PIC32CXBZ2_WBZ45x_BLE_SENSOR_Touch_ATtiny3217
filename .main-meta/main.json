@@ -1,0 +1,58 @@
+{
+    "metaDataVersion": "1.0.0",
+    "category": "com.microchip.ide.project",
+    "content": {
+        "metaDataVersion": "1.3.0",
+        "name": "com.microchip.mplabx.project.PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217",
+        "version": "1.0.0",
+        "displayName": "WBZ45x BLE Sensor with ATTINY3217 Touch Demo",
+        "projectName": "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217",
+        "shortDescription": "Application to control the RGB led on WBZ451 Curiosity board using T10 Board and Microchip Bluetooth Data(MBD) iOS/Android app.",
+        "ide": {
+            "name": "MPLAB X",
+            "semverRange": ">=6.00"
+        },
+        "compiler": [
+            {
+                "name": "XC32",
+                "semverRange": "^4.10.0"
+            }
+        ],
+        "dfp": {
+            "name": "PIC32CX-BZ_DFP",
+            "semverRange": "^1.0.107"
+        },
+        "configurator": {
+            "name": "MCC",
+            "semverRange": ">=5.1.17"
+        },
+        "device": {
+            "metaDataVersion": "1.0.0",
+            "category": "com.microchip.portal.contentRef",
+            "content": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.device",
+                "name": " PIC32CX-BZ2",
+                "versionRange": "*"
+            }
+        },
+        "author": "Roopika M M and Sankar Mohan",
+        "peripherals": [
+            "SERCOM"
+        ],
+        "keywords": [
+             "IoT","BLE","Capacitive Touch","MPLAB X","XC32","PTC","SERCOM","MCC","Wireless","Development Tool","Bluetooth"
+        ],
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "./README.md",
+                    "mimeType": "text/markdown"
+                }
+            }
+        }
+    }
+}
