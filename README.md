@@ -1,4 +1,4 @@
-# WBZ45x BLE Sensor with ATTINY3217 Touch Demo
+# PIC32CXBZ2_WBZ45x BLE Sensor with ATTINY3217 Touch Demo
 
 <img src="docs/IoT-Made-Easy-Logo.png" width=100>
 

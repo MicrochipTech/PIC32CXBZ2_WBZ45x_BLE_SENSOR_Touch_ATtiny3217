@@ -5,7 +5,7 @@
         "metaDataVersion": "1.3.0",
         "name": "com.microchip.mplabx.project.PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217",
         "version": "1.0.0",
-        "displayName": "WBZ45x BLE Sensor with ATTINY3217 Touch Demo",
+        "displayName": "PIC32CXBZ2_WBZ45x BLE Sensor with ATTINY3217 Touch Demo",
         "projectName": "PIC32CXBZ2_WBZ45x_BLE_SENSOR_Touch_ATtiny3217",
         "shortDescription": "IoT Made Easy!-Application to control the RGB led on WBZ451 Curiosity board using T10 Board and Microchip Bluetooth Data(MBD) iOS/Android app.",
         "ide": {
